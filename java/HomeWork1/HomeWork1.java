@@ -34,7 +34,7 @@ public class HomeWork1 {
             int[] res = recWay(mas, numA + 1, numB + 1, numC, numD);
             printArr(res);
             String resWay = wayArr(numA, numB, numC, numD);
-            System.out.println(resWay); 
+            System.out.println("\n" + resWay); 
         }
     }
 
@@ -68,11 +68,9 @@ public class HomeWork1 {
     static void printArr(int[] mas) {
         for (int i = 0; i < mas.length; i++) {
             if (i == mas.length - 1) {
-                System.out.printf("\n");
-                System.out.printf("Количество вариантов для %d = %d", i, mas[i]);
+                System.out.printf("\nКоличество вариантов для %d = %d", i, mas[i]);
             }
             else System.out.printf("%d=%d ", i, mas[i]);
         }
-        System.out.printf("\n");
     }
 }
