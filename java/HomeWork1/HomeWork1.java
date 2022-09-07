@@ -11,10 +11,10 @@
 *Подумать над тем, как сделать минимальное количество команд
  */
 
-package Practicum1;
+package HomeWork1;
 import java.util.Scanner;
 
-public class zadacha1 {
+public class HomeWork1 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Введите число 'a': ");
