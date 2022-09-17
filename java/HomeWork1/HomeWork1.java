@@ -32,10 +32,21 @@ public class HomeWork1 {
             int[] mas = new int[numB + 1];
             mas[numA] = 1;
             int[] res = recWay(mas, numA + 1, numB + 1, numC, numD);
-            printArr(res);
+            System.out.println(printArr(res));
             String resWay = wayArr(numA, numB, numC, numD);
-            System.out.println("\n" + resWay); 
+            System.out.println(resWay); 
         }
+    }
+
+    static String printArr(int[] mas) {
+        String res = "";
+        for (int i = 0; i < mas.length; i++) {
+            if (i == mas.length - 1) {
+                res += String.format("\nКоличество вариантов для %d = %d", i, mas[i]);
+            }
+            else res += String.format("%d=%d ", i, mas[i]);
+        }
+        return res;
     }
 
     static int[] recWay(int[] mas, int numA, int numB, int numC, int numD) {
@@ -65,12 +76,5 @@ public class HomeWork1 {
         return result;
     }
 
-    static void printArr(int[] mas) {
-        for (int i = 0; i < mas.length; i++) {
-            if (i == mas.length - 1) {
-                System.out.printf("\nКоличество вариантов для %d = %d", i, mas[i]);
-            }
-            else System.out.printf("%d=%d ", i, mas[i]);
-        }
-    }
+
 }

@@ -1,6 +1,7 @@
 // Реализовать алгоритм пирамидальной сортировки (HeapSort)
 
 package HomeWork3;
+import java.util.Arrays;
 
 public class HomeWork32 {
     public static void main(String[] args) {
@@ -15,13 +16,7 @@ public class HomeWork32 {
             swapVal(mas, 0, j);
             heapSort(mas, 0, j);
         }
-        printArr(mas);
-    }
-
-    static void printArr(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.printf("%d ", arr[i]);
-        }
+        System.out.println(Arrays.toString(mas));
     }
 
     static void swapVal(int[] arr, int a, int b) {

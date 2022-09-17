@@ -9,6 +9,7 @@ public class HomeWork31 {
         System.out.println("Введите количество колец: ");
         int val = in.nextInt();
         in.close();
+
         int start = 1;
         int betw = 2;
         int tow = 3;
