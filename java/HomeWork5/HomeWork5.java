@@ -1,8 +1,8 @@
-// Подумать над реализацией волнового алгоритма
+// Реализация волнового алгоритма
 
-package HomeWork4;
+package HomeWork5;
 
-public class HomeWork41 {
+public class HomeWork5 {
     public static void main(String[] args) {
         int[][] arr = new int[10][9];
         fillArr(arr);
